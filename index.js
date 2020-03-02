@@ -4,8 +4,8 @@ async function main() {
     const fs = require('fs');
 
     // The name of the audio file to transcribe
-    const fileName = 'sound.mp3';
-    
+    const fileName = 'sound-silvio.mp3';
+
     // Creates a client
     const client = new speech.SpeechClient({
         credentials:{

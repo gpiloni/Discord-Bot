@@ -1,9 +1,12 @@
 const Discord = require("discord.js"); //baixar a lib
 const client = new Discord.Client(); 
+const broadcasts = client.broadcasts; 
+
 const config = require("./config.json"); 
 
 
 client.on("ready", () => {
+  console.log(broadcasts);
   console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
   client.user.setPresence({ game: { name: 'comando', type: 1, url: 'https://www.twitch.tv/'} });
     //0 = Jogando
